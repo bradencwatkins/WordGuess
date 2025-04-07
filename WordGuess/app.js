@@ -8,7 +8,7 @@ let guessedLetters = [];
 let correctLetters = [];
 
 //SOUNDS FOR FUNNY
-const winSound = new Audio('sfx/win.mp3');
+/* const winSound = new Audio('sfx/win.mp3');
 winSound.volume = 0.5;
 const loseSound = new Audio('sfx/dead.mp3');
 loseSound.volume = 0.5;
@@ -16,7 +16,7 @@ const wrongSound = new Audio('sfx/bonk.mp3');
 wrongSound.volume = 0.6;
 const correctSound = new Audio('sfx/right.mp3');
 correctSound.volume = 0.3;
-const bonkSound = new Audio('sfx/wrong.mp3');
+const bonkSound = new Audio('sfx/wrong.mp3'); */
 
 
 // FUNCTION TO CHANGE WHATS ON THE PAGE
@@ -186,7 +186,7 @@ function guessLetter(letter) {
         guessedLetters.push(letter);
     }
     else if (guessedLetters.includes(letter)) {
-        bonkSound.play();
+        //bonkSound.play();
         alert('Letter was already guessed');
         return;
     }
@@ -202,17 +202,17 @@ function guessLetter(letter) {
     }
 
     if (correctGuess) {
-        correctSound.play();
+        //correctSound.play();
     }
 
     if (!correctGuess) {
         if (lives > 1) {
-            wrongSound.play();
+            //wrongSound.play();
         }
         lives--;
     }
     if (lives === 0) {
-        loseSound.play();
+        //loseSound.play();
         gameState = 'gameOver';
         updateContent();
     }
@@ -226,7 +226,7 @@ function checkGameOver() {
         }
     }
 
-    winSound.play();
+    //winSound.play();
     gameState = 'win';
     updateContent();   
 }
