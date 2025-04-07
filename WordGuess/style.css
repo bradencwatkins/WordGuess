@@ -1,0 +1,267 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* STATIC TITLE AT TOP OF PAGE */
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-top: -3%;
+    padding: 10px;
+    background-color: lightblue;
+    border: solid 3px darkblue;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* FOR APP CONTAINER THAT ALL APP STUFF CHANGES IN */
+.app {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Verdana', sans-serif;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: lightblue;
+    border: solid 3px darkblue;
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 5%;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* EASY, MEDIUM, AND HARD BUTTONS */
+.play-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.play-button {
+    background-color: lightyellow;
+    width: 30%;
+    height: 80%;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+#easy { background-color: #CDEBC5;}
+#medium { background-color: #F0E68C;}
+#hard { background-color: #F0A3A3;}
+
+.play-button:hover {
+    background-color: yellowgreen;
+}
+
+/* DESCRIPTION BUTTON UNDER DIFFICULTY BUTTONS */
+.description-button-container {
+    width: 40%;
+    margin-top: 50px;
+}
+
+.description-button {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.description-button:hover {
+    background-color: yellowgreen;
+}
+
+/* DESCRIPTION PAGE */
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* BACK BUTTON IN DESCRIPTION PAGE */
+.back-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.back-button {
+    background-color: lightyellow;
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: yellowgreen;
+}
+
+
+/* GAME PAGE */
+.game {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: -30px;
+}
+
+.letter-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 13%;
+    margin-top: 20px;
+}
+
+.letter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 60px;
+    background-color: whitesmoke;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 3rem;
+}
+
+/* LETTER BOX CONTAINER TO GUESS LETTER */
+.letter-enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.letter-input {
+    width: 5%;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.letter-button {
+    background-color: lightyellow;
+    width: 10%;
+    height: 80%;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.letter-button:hover {
+    background-color: #CDEBC5;
+}
+
+.guessed-letters-container {
+    font-size: 1.4rem;
+}
+
+.lives-container {
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+
+/* GAME OVER PAGE */
+.game-over-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.lose-back-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    height: 10%;
+}
+.lose-back-button {
+    
+    background-color: lightyellow;
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+    
+.lose-back-button:hover {
+    background-color: yellowgreen;
+}
+
+/* WIN PAGE */
+.win-back-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    height: 10%;
+}
+.win-back-button {
+    background-color: lightyellow;
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.win-back-button:hover {
+    background-color: yellowgreen;
+}

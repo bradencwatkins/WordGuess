@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordGuess</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+
+    <h1 class="title">WordGuess</h1>
+    <div class="app">
+        <h1 class="welcome">Welcome to WordGuess!</h1>
+        <p>Learn how to play with the description button,
+            or choose a difficulty level to start playing right away!
+        </p>
+        <div class="play-buttons">
+            <button onClick="changeContent('easy')" class="play-button" id="easy">Easy (4-5 letters)</button>
+            <button onClick="changeContent('medium')" class="play-button" id="medium">Medium (6-7 letters)</button>
+            <button onClick="changeContent('hard')" class="play-button" id="hard">Hard (8-9 letters)</button>
+        </div>
+
+        <div class="description-button-container">
+            <button onClick="changeContent('description')" class="description-button">Description</button>
+        </div>
+
+    </div>
+    
+    <script type="module" src="/app.js"></script>
+    
+</body>
+</html>
